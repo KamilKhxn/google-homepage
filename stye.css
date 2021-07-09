@@ -13,7 +13,7 @@ footer{
 .Alignment{
 
     display:block;
-    margin: auto;
+    margin: 0 auto;
 
 }
 
@@ -34,16 +34,77 @@ footer{
     outline: none;
 }
 ul {
+    /*list-style-type: none; removes bullet points*/
     list-style-type: none;
+    /*margin and padding removes browser default*/
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  li {
+      /* pushes all elemnts left*/
+    float: left;
+  }
+  li a {
+      /*display: block; - Displaying the links as block 
+      elements makes the whole link area clickable (not just 
+      the text), and it allows us to specify the width (and 
+      padding, margin, height, etc. if you want)*/
+    display: block;
+    /*text color*/
+    color: rgb(87, 82, 82);
+    /*centers text in each block*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial;
+    font-size:13px;
+
+
+  }
+  li a:hover {
+    text-decoration: underline;
+
+  }
+  .mario{
+      display: block;
+      height: 30px;
+      width: 30px;
+      padding: 0%;
+  }
+  mario:hover{
+      box-shadow: 2px 2px 2px 1px black;
+  }
+  button{
+
+    border:none;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(245, 240, 240);
+    font-family:Arial;
+    display: block;
+    margin: 0 auto;
+  }
+  .relative {
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+
+   } 
+   .navitem {
+    display: inline-block;
+     
+     text-align: center;
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+   }
+
+  
+
+
+  button:hover{
+
   }
 
-/*.realSearchBox{
-    width:500px;
-    padding:1px;
-    border-width: 4px;
-    border-style:solid;
-    border-color:red;
-    
-}*/
+
